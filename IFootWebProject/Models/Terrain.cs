@@ -8,7 +8,8 @@
 
         }
         public int id { set; get;}
-       public string Localisation { get; set; }
+        public string Nom { get; set; }
+        public string Localisation { get; set; }
         public float Prix { get; set; }
         public string Type { get; set; }
 

@@ -56,7 +56,7 @@ namespace IFootWebProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,Localisation,Prix,Type")] Terrain terrain)
+        public async Task<IActionResult> Create([Bind("id,Nom,Localisation,Prix,Type")] Terrain terrain)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace IFootWebProject.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,Localisation,Prix,Type")] Terrain terrain)
+        public async Task<IActionResult> Edit(int id, [Bind("id,Nom,Localisation,Prix,Type")] Terrain terrain)
         {
             if (id != terrain.id)
             {
